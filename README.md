@@ -1,5 +1,4 @@
 # Simple Shell
-	**By Spencer Cheng, featuring Julien Barbier**
 Project to be done in teams of 2 people (your team: Michael Glory M,  David Bibiresanmi)
 
 # Learning Objectives
