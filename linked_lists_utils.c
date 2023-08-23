@@ -59,7 +59,7 @@ info_list *add_node(info_list **head, const char *str_char, int num)
  * If the linked list is empty, the new node becomes the head of the list.
  */
 info_list *add_node_end(info_list **head, const char *str_char, int num)
-i{
+{
 	info_list *node_new, *node_current;
 
 	if (!head)
