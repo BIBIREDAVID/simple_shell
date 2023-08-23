@@ -1,4 +1,0 @@
-nked_lists_utils.c:62: warning: Excess function parameter 'str' description in 'add_node_end'
-add_node_end
-linked_lists_utils.c:111: warning: No description found for parameter or member 'head'
-linked_lists_utils.c:112: warning: Excess function parameter 'h' description in 'print_linked_list_str'
