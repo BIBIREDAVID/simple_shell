@@ -66,7 +66,6 @@ typedef struct liststr
  * @environ: Array of strings representing the environment variables
  * @env_changed: Flag indicating if environment variables have changed
  * @status: Status code of the last executed command
-
  * @cmd_buf: Pointer to a command chain buffer for memory management
  * @cmd_buf_type: Type of command chain (CMD_type: ||, &&, ;)
  * @readfd: File descriptor for reading input
@@ -108,9 +107,9 @@ typedef struct passinfo
  * @type: String representing the name of the built-in command
  * @func: Pointer to the function implementing the built-in command
  *
- * The `builtin` struct holds information about built-in commands in a shell program.
- * It includes the name of the built-in command and a pointer to the function that
- * implements its functionality.
+ * The `builtin` struct holds information about built-in commands in a shell
+ * program. It includes the name of the built-in command and a pointer to the
+ * function that implements its functionality.
  */
 typedef struct builtin
 {
