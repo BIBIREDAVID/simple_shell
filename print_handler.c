@@ -88,7 +88,7 @@ int print_char_file_desc(char c, int file_desc)
 /**
  * print_string_file_desc - Writes a string to a specified file descriptor.
  * @str: The string to be written.
- * @fd: The file descriptor to write to.
+ * @file_desc: The file descriptor to write to.
  *
  * Return: The number of characters written.
  *
@@ -119,23 +119,25 @@ int print_string_file_desc(char *str, int file_desc)
 /**
  * print_decimal - Prints an integer to a file descriptor.
  * @input: The integer to be printed.
- * @fd: The file descriptor to write to.
+ * @file_desc: The file descriptor to write to.
  *
  * Return: The number of characters printed.
  *
- * Description: This function prints an integer to the specified file descriptor.
- * If the file descriptor is STDERR_FILENO, it uses the 'print_char' function for output.
- * The function handles negative numbers by printing the minus sign and converting
- * the integer to its absolute value. It then iterates through the digits of the integer
- * and prints each digit character. The function returns the number of characters printed.
+ * Description: This function prints an integer to the specified file
+ * descriptor. If the file descriptor is STDERR_FILENO, it uses the
+ * 'print_char' function for output. The function handles negative
+ * numbers by printing the minus sign and converting the integer to its
+ * absolute value. It then iterates through the digits of the integer and
+ * print each digit character. The function returns the number of
+ * characters printed.
  */
-int print_decimal(int input, int fd)
+int print_decimal(int input, int file_desc)
 {
 	int (*__putchar)(char) = _putchar;
 	int i_iter, count_dec = 0;
 	unsigned int _abs_dec_, current_dec;
 
-	if (fd == STDERR_FILENO)
+	if (file_desc == STDERR_FILENO)
 	{
 		__putchar = print_char;
 	}

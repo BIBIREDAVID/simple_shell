@@ -98,10 +98,9 @@ void *_realloc(void *prev_ptr, unsigned int size_old, unsigned int size_new)
 	return (p);
 }
 
-
 /**
  * free_ptr - frees a pointer and NULLs the address
- * @ptr: address of the pointer to free
+ * @d_ptr: address of the pointer to free
  *
  * Return: 1 if freed, otherwise 0.
  */

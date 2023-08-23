@@ -98,8 +98,7 @@ ssize_t get_input(info_t *info_struct)
 		*buffer_ptr = ptr;		/* pass pointer to current command position */
 		return (_strlen(ptr)); /* return length of current command */
 	}
-
-	*buffer_ptr = buffer; /* else not chain, pass back buffer frm get_stdin_line() */
+*buffer_ptr = buffer; /* else not chain,pass back buffer frm get_stdin_line()*/
 	return (buffer_len);	  /* return length of buffer from get_stdin_line() */
 }
 

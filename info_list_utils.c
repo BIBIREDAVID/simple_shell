@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * clear_info - Clears fields within the info_t structure.
+ * clear_info_list - Clears fields within the info_t structure.
  * @info_struct: Pointer to the info_t structure.
  *
  * Description: This function resets various fields within the info_t structure
@@ -28,7 +28,8 @@ void clear_info_list(info_t *info_struct)
  * argv field with the result of splitting the arg field (if not NULL) by
  * delimiters " \t". If argv allocation or splitting fails, a fallback is used
  * to allocate space for argv. The argc field is set to the count of arguments
- * in argv. The function then calls replace_cmd_with_alias and replace_cmd_argv to perform
+ * in argv. The function then calls replace_cmd_with_alias and replace_cmd_argv
+ * to perform
  * alias and variable replacement.
  */
 void set_info_list(info_t *info_struct, char **arg_v)

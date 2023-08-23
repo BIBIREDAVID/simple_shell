@@ -135,7 +135,8 @@ void search_exe_cmd(info_t *info_struct)
 	if (!count_k)
 		return;
 
-	env_path = find_cmd_path(info_struct, get_env_var(info_struct, "PATH="), info_struct->argv[0]);
+	env_path = find_cmd_path(info_struct, get_env_var(info_struct, "PATH="),
+								info_struct->argv[0]);
 
 	if (env_path)
 	{
@@ -144,7 +145,8 @@ void search_exe_cmd(info_t *info_struct)
 	}
 	else
 	{
-		if ((is_interactive(info_struct) || get_env_var(info_struct, "PATH=") || info_struct->argv[0][0] == '/')
+		if ((is_interactive(info_struct) || get_env_var(info_struct, "PATH=")
+										|| info_struct->argv[0][0] == '/')
 			&& is_exe_cmd(info_struct, info_struct->argv[0]))
 			fork_execute_cmd(info_struct);
 		else if (*(info_struct->arg) != '\n')
@@ -186,7 +188,7 @@ void fork_execute_cmd(info_t *info_struct)
 
 			if (errno == EACCES)
 				exit(126);
-			
+
 			exit(1);
 		}
 		/* TODO: PUT ERROR FUNCTION */

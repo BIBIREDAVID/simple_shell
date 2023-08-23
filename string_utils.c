@@ -26,8 +26,8 @@ int _strlen(char *s)
 
 /**
  * _strcmp - Compares two strings.
- * @s1: Pointer to the first string.
- * @s2: Pointer to the second string.
+ * @str1: Pointer to the first string.
+ * @str2: Pointer to the second string.
  *
  * Return: An integer less than, equal to, or greater than 0, depending on
  * whether the first string is less than, equal to, or greater than the second
@@ -143,4 +143,5 @@ char *_strchr(char *s, char ch)
 
 	return (NULL);
 }
+
 

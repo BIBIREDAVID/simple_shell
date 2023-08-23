@@ -3,7 +3,7 @@
 /**
  * add_node - Adds a new node to the beginning of a linked list.
  * @head: Pointer to the head of the linked list.
- * @str: String to be stored in the new node.
+ * @str_char: String to be stored in the new node.
  * @num: Integer to be stored in the new node.
  *
  * Return: Pointer to the newly created node, or NULL if memory allocation
@@ -47,7 +47,7 @@ info_list *add_node(info_list **head, const char *str_char, int num)
 /**
  * add_node_end - Adds a new node to the end of a linked list.
  * @head: Pointer to the head of the linked list.
- * @str: String to be stored in the new node.
+ * @str_char: String to be stored in the new node.
  * @num: Integer to be stored in the new node.
  *
  * Return: Pointer to the newly created node, or NULL if memory allocation
@@ -59,7 +59,7 @@ info_list *add_node(info_list **head, const char *str_char, int num)
  * If the linked list is empty, the new node becomes the head of the list.
  */
 info_list *add_node_end(info_list **head, const char *str_char, int num)
-{
+i{
 	info_list *node_new, *node_current;
 
 	if (!head)
@@ -99,7 +99,7 @@ info_list *add_node_end(info_list **head, const char *str_char, int num)
 
 /**
  * print_linked_list_str - Prints the strings in a linked list.
- * @h: Pointer to the head of the linked list.
+ * @head: Pointer to the head of the linked list.
  *
  * Return: Number of nodes in the linked list.
  *
